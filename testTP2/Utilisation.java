@@ -3,6 +3,7 @@ package testTP2;
 import java.util.ArrayList;
 
 import tp2.Animal;
+import tp2.Chat;
 import tp2.Chien;
 
 public class Utilisation {
@@ -25,7 +26,7 @@ public class Utilisation {
 		animaux[3] = foxTerrier;
 		
 		for(int i=0; i<animaux.length; i++){
-			System.out.println("animaux[" + i + "] = " + animaux[i]);
+			System.out.println("Noms animaux[" + i + "] = " + animaux[i].getNom());
 		}
 		
 		ArrayList<Animal> mesAnimaux = new ArrayList<Animal>();
@@ -33,9 +34,12 @@ public class Utilisation {
 		mesAnimaux.add(animal);
 		mesAnimaux.add(dogue);
 		mesAnimaux.add(foxTerrier);
+				
+		Chat chat = new Chat(2, "méchant", "Siamois");
+		mesAnimaux.add(chat);
 		
 		System.out.println(mesAnimaux);
-		
+
 	}
 
 }
